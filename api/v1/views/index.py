@@ -15,7 +15,6 @@ def status():
 def stats():
     """Returns states"""
     return jsonify({"amenities": storage.count("Amenity"),
-                    "cities": storage.count("City"),
                     "places": storage.count("Place"),
                     "reviews": storage.count("Review"),
                     "states": storage.count("State"),

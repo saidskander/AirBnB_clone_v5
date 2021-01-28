@@ -7,7 +7,7 @@ from flask_cors import CORS
 from api.v1.views import app_views
 from models import storage
 
-# Flask configuration
+# app flask configuration
 app = Flask(__name__)
 CORS(app, orgins='0.0.0.0')
 app.register_blueprint(app_views)
